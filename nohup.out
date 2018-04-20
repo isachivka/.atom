@@ -1,0 +1,15 @@
+Gtk-Message: Failed to load module "canberra-gtk-module"
+Couldn't retain /home/isachivka/.atom/recovery/selectors-test-e9aefd.js. Code: ENOENT. Message: ENOENT: no such file or directory, open '/home/isachivka/.atom/recovery/selectors-test-e9aefd.js'
+Fontconfig warning: "/etc/fonts/fonts.conf", line 160: blank doesn't take any effect anymore. please remove it from your fonts.conf
+[13831:13871:0418/125902.557155:ERROR:nss_util.cc(724)] After loading Root Certs, loaded==false: NSS error code: -8018
+[13831:13871:0418/125902.557809:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+В текущем сеансе браузера создано новое окно.
+Fontconfig warning: "/etc/fonts/fonts.conf", line 160: blank doesn't take any effect anymore. please remove it from your fonts.conf
+[13977:14017:0418/125907.953493:ERROR:nss_util.cc(724)] After loading Root Certs, loaded==false: NSS error code: -8018
+[13977:14017:0418/125907.954239:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+В текущем сеансе браузера создано новое окно.
+Couldn't retain /home/isachivka/.atom/recovery/selectors-test-9c0bb8.js. Code: ENOENT. Message: ENOENT: no such file or directory, open '/home/isachivka/.atom/recovery/selectors-test-9c0bb8.js'
+Couldn't retain /home/isachivka/.atom/recovery/selectors-test-091da7.js. Code: ENOENT. Message: ENOENT: no such file or directory, open '/home/isachivka/.atom/recovery/selectors-test-091da7.js'
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:71:22
+Remote event names: destroyed, crashed

@@ -1,0 +1,21 @@
+"*":
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "atom-chai-snippets"
+      "react"
+      "javascript-snippets"
+      "autocomplete-paths"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 15
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "4bfe28f2-f667-4f96-b6ee-fc6e30290b4a"
+  "git-blame":
+    columnWidth: 288
+  "js-hyperclick": {}
+  "linter-ui-default": {}
+  welcome:
+    showOnStartup: false
