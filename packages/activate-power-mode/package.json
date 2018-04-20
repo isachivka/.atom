@@ -1,0 +1,79 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+        "spec": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/apm-install-dir-118320-93139-17mumqx.nlyv81714i"
+    ]
+  ],
+  "_from": "../d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+  "_id": "activate-power-mode@2.7.0",
+  "_inCache": true,
+  "_location": "/activate-power-mode",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+    "spec": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+  "_shasum": "36da0f39ec385a33dad93f74243490f5b3085f01",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/d-118320-93139-k2ad46.epqkqehfr/package.tgz",
+  "_where": "/private/var/folders/r5/q6qw0nf93fx_ck6lrrwl3wq00000gn/T/apm-install-dir-118320-93139-17mumqx.nlyv81714i",
+  "author": {
+    "name": "Joel Besada",
+    "email": "joel@joelb.me",
+    "url": "http://joelb.me"
+  },
+  "bugs": {
+    "url": "https://github.com/JoelBesada/activate-power-mode/issues"
+  },
+  "dependencies": {
+    "atom-select-list": "^0.2.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.random": "^3.1.5",
+    "lodash.sample": "^4.2.1",
+    "lodash.throttle": "^4.0.1"
+  },
+  "description": "Activate POWER MODE to write your code in style.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.19.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JoelBesada/activate-power-mode#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/activate-power-mode",
+  "name": "activate-power-mode",
+  "optionalDependencies": {},
+  "providedServices": {
+    "activate-power-mode": {
+      "description": "Provide an API to add plugins, effects and flows.",
+      "versions": {
+        "1.0.0": "provideServiceV1"
+      }
+    }
+  },
+  "readme": "# Activate Power Mode\n\nA package for Atom to replicate the effects from [codeinthedark/editor](https://github.com/codeinthedark/editor).\n\n![activate-power-mode-0 4 0](https://cloud.githubusercontent.com/assets/688415/11615565/10f16456-9c65-11e5-8af4-265f01fc83a0.gif)\n\nNow with a COMBO MODE!!!\n\n![activate-power-mode-combo](https://cloud.githubusercontent.com/assets/10590799/18817237/876c2d84-8321-11e6-8324-f1540604c0bd.gif)\n\n**For a list of power mode packages to other editors, check out [codeinthedark/awesome-power-mode](https://github.com/codeinthedark/awesome-power-mode).**\n\n## Install\n\nWith the atom package manager:\n```bash\napm install activate-power-mode\n```\nOr Settings ➔ Packages ➔ Search for `activate-power-mode`\n\n## Usage\n\n- Activate with <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>O</kbd> or through the command panel with `Activate Power Mode: Toggle`. Use the command again to deactivate.\n\n**IMPORTANT: When `Combo Mode` is enabled, particles and other effects won't appear until you reach the activation threshold.**\n\n- Reset the max combo streak with the command `Activate Power Mode: Reset Max Combo`\n\n## Settings\n\n### Auto Toggle\nAuto enable power mode on atom start.\n\n### Combo Mode\n* **Enable/Disable**\n\n**When enabled effects won't appear until reach the activation threshold.**\n\n* Activation Threshold\n* Streak Timeout\n* Exclamation Every\n* Exclamation Texts\n\n### Screen Shake\n* **Enable/Disable**\n* Intensity\n\n### Play Audio\n* **Enable/Disable**\n* Volume\n* Audioclip (Gun, Typewriter, Custom)\n\n### Particles\n* **Enable/Disable**\n* Colour\n\nWith this option you can select if use the color at cursor position, random colors or a fixed one.\n\n* Total Count\n* Spawn Count\n* Size\n\n### Excluded File Types\n* Array of file types to exclude\n\n### Plugins\nHere you can Enable/Disable the registered plugins.\n\n## Customize\nYou can extend the basic functionality of this package by consuming the activate-power-mode service, with this you can register your own plugins, flows and canvas effects.\n\nCheck it out in the [wiki](https://github.com/JoelBesada/activate-power-mode/wiki).\n\nIf you only want to change the input logic, see the [user file flow](https://github.com/JoelBesada/activate-power-mode/wiki/Flow#user-file-flow) page.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelBesada/activate-power-mode.git"
+  },
+  "version": "2.7.0"
+}
