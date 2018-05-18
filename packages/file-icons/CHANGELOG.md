@@ -3,7 +3,31 @@ Change Log
 All notable changes to the project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-[Unpublished]: https://github.com/file-icons/atom/compare/v2.1.18...HEAD
+[Unpublished]: https://github.com/file-icons/atom/compare/v2.1.20...HEAD
+
+
+[v2.1.20] - 2018-05-09
+----------------------
+### Added
+- **New icons:** Caffe2 (`.caffe2model`, `{init,predict}_net.pb`, `{deploy,solver,train_val}.prototxt`), Dia (`.dia`), Go (rebranded), HoundCI (`.hound.yml`), NDepend (`.ndproj`, `.nproj`), Neo4J (`.cyp`, `.cypher`), PROS (`project.pros`), PullApprove (`.pullapprove.yml`), TLA+ (`.tla`), WDL (`.wdl`), WiX (`.wixproj`, `.wixobj`, `.wxs`, `.wxi`, `.wxl`)
+- **Support:** Data (`.prototxt`, `.pbtxt`), Debian (`.control`, `.dsc`) Electron (`.compilerc`, `.compilerc.json`), Firebase (`firestore.rules`), Readmes (`.changes`), RPM (`.rpmmacros`), Rust (`rust-toolchain`), Tests (`.test`, `.test.js`), VSCode (`.vcxproj.filters`), XML (`.admx`, `.cscfg`, `.natvis`, `.proj`, `.rdg`)
+
+### Changed
+- [[`#728`][]]: Replaced Go's gopher with [newly branded logo][gologo].
+
+[v2.1.20]: https://github.com/file-icons/atom/releases/tag/v2.1.20
+[gologo]: https://blog.golang.org/go-brand
+[`#728`]: https://github.com/file-icons/atom/issues/728
+
+
+
+[v2.1.19] - 2018-04-25
+----------------------
+### Added
+- **New icons:** Bitmap font (`.bdf`, `.fnt`, `.fon`, `.pcf`, `.psf`, `.psftx`, `.snf`), Vector font (replaces existing font-icon), V8 Turbofan
+- **Support:** JavaScript (`.es5`, `.es7`), Mocha (`mocha.min.js`), Normalize (`normalize.min.css`), PowerShell (`pwsh` executables), Prettier (`.prettierignore`), Snakefile (`.smk`)
+
+[v2.1.19]: https://github.com/file-icons/atom/releases/tag/v2.1.19
 
 
 [v2.1.18] - 2018-03-22

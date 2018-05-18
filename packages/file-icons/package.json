@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
+        "raw": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
-        "spec": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
+        "rawSpec": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
+        "spec": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-118318-19063-1lxtba4.cdk4vx6r"
+      "/tmp/apm-install-dir-118411-1198-pqo6yu.hyypop3nmi"
     ]
   ],
-  "_from": "../d-118318-19063-1p2siio.bxss90be29/package.tgz",
-  "_id": "file-icons@2.1.18",
+  "_from": "../d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
+  "_id": "file-icons@2.1.20",
   "_inCache": true,
   "_location": "/file-icons",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
+    "raw": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
-    "spec": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
+    "rawSpec": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
+    "spec": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118318-19063-1p2siio.bxss90be29/package.tgz",
-  "_shasum": "ff1c6caa1ae93ed2036b3b41a3be3cf69a0a0813",
+  "_resolved": "file:../d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
+  "_shasum": "47a42ca14890e641b5a4f6eb425281186d7c5319",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-118318-19063-1p2siio.bxss90be29/package.tgz",
-  "_where": "/tmp/apm-install-dir-118318-19063-1lxtba4.cdk4vx6r",
+  "_spec": "/tmp/d-118411-1198-55xvlp.gbnq74lsor/package.tgz",
+  "_where": "/tmp/apm-install-dir-118411-1198-pqo6yu.hyypop3nmi",
   "atomTestRunner": "atom-mocha",
   "bugs": {
     "url": "https://github.com/file-icons/atom/issues"
@@ -152,5 +152,5 @@
     "type": "git",
     "url": "git+https://github.com/file-icons/atom.git"
   },
-  "version": "2.1.18"
+  "version": "2.1.20"
 }

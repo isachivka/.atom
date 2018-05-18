@@ -1,4 +1,8 @@
 "*":
+  "atom-package-deps":
+    ignored: [
+      "js-hyperclick"
+    ]
   core:
     autoHideMenuBar: true
     disabledPackages: [
@@ -9,13 +13,13 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 15
     scrollPastEnd: true
   "exception-reporting":
     userId: "4bfe28f2-f667-4f96-b6ee-fc6e30290b4a"
   "git-blame":
     columnWidth: 288
   "js-hyperclick": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   welcome:
     showOnStartup: false

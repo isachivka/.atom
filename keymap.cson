@@ -30,3 +30,20 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+'atom-workspace atom-text-editor':
+
+  # 'ctrl-left': 'editor:move-to-beginning-of-word'
+  # 'ctrl-right': 'editor:move-to-end-of-word'
+  'ctrl-left': 'editor:move-to-first-character-of-line'
+  'ctrl-right': 'editor:move-to-end-of-screen-line'
+
+  # 'ctrl-shift-left': 'editor:select-to-beginning-of-word'
+  # 'ctrl-shift-right': 'editor:select-to-end-of-word'
+  'ctrl-shift-left': 'editor:select-to-first-character-of-line'
+  'ctrl-shift-right': 'editor:select-to-end-of-line'
+
+  # 'alt-left': 'editor:move-to-previous-subword-boundary'
+  # 'alt-right': 'editor:move-to-next-subword-boundary'
+  'alt-left': 'editor:move-to-beginning-of-word'
+  'alt-right': 'editor:move-to-end-of-word'
