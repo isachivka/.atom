@@ -50,53 +50,11 @@ Twitter account for news and releases: [@autoprefixer].
 [cult]:             http://cultofmartians.com/tasks/autoprefixer-grid.html
 
 
-## Features
-
-### Write Pure CSS
-
-Working with Autoprefixer is simple: just forget about vendor prefixes
-and write normal CSS according to the latest W3C specs. You don’t need
-a special language (like Sass) or remember where you must use mixins.
-
-Autoprefixer supports selectors (like `:fullscreen` and `::selection`),
-unit function (`calc()`), at‑rules (`@supports` and `@keyframes`)
-and properties.
-
-Because Autoprefixer is a postprocessor for CSS,
-you can also use it with preprocessors such as Sass, Stylus or LESS.
-
-
-### Only Actual Prefixes
-
-Autoprefixer utilizes the most recent data from [Can I Use]
-to add only necessary vendor prefixes.
-
-It also removes old, unnecessary prefixes from your CSS
-(like `border-radius` prefixes, produced by many CSS libraries).
-
-```css
-a {
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-}
-```
-
-compiles to:
-
-```css
-a {
-    border-radius: 5px;
-}
-```
-
-[Can I Use]: http://caniuse.com/
-
-
 ## Browsers
 
 Autoprefixer uses [Browserslist], so you can specify the browsers
 you want to target in your project by queries like `> 5%`
-(see [Best Practises]).
+(see [Best Practices]).
 
 The best way to provide browsers is `.browserslistrc` config
 or `package.json` with `browserslist` key. Put it in your project root.
@@ -110,39 +68,64 @@ and default value.
 
 [Browserslist docs]: https://github.com/ai/browserslist#queries
 [babel-preset-env]:  https://github.com/babel/babel-preset-env
-[Best Practises]:    https://github.com/browserslist/browserslist#best-practices
+[Best Practices]:    https://github.com/browserslist/browserslist#best-practices
 [Browserslist]:      https://github.com/ai/browserslist
 [Stylelint]:         http://stylelint.io/
 
 
-## Outdated Prefixes
+## FAQ
 
-By default, Autoprefixer also removes outdated prefixes.
+#### Does Autoprefixer polyfill Grid Layout for IE?
 
-You can disable this behavior with the `remove: false` option. If you have
-no legacy code, this option will make Autoprefixer about 10% faster.
+Autoprefixer can be used to use Grid Layout for IE 10 and IE 11.
+But this polyfill will not work in 100 % cases.
+This is why it is disabled by default.
 
-Also, you can set the `add: false` option. Autoprefixer will only clean outdated
-prefixes, but will not add any new prefixes.
+First, you need to enable Grid prefixes by `grid: true` option.
 
-Autoprefixer adds new prefixes between any unprefixed properties and already
-written prefixes in your CSS. If it will break the expected prefixes order,
-you can clean all prefixes from your CSS and then
-add the necessary prefixes again:
+Second, you need to test every fix with Grid in IE. It is not,
+enable and forget featur. But it is still very useful.
+Financial Times and Yandex use it in production.
 
-```js
-var cleaner  = postcss([ autoprefixer({ add: false, browsers: [] }) ]);
-var prefixer = postcss([ autoprefixer ]);
+Third, there is not auto placement and all grid cell position must be set
+explicitly. However, Autoprefixer can covert even `grid-template`
+and `grid-gap` (but only when they are together).
 
-cleaner.process(css).then(function (cleaned) {
-    return prefixer.process(cleaned.css);
-}).then(function (result) {
-    console.log(result.css);
-});
+```css
+.page {
+    display: grid;
+    grid-gap: 33px;
+    grid-template:
+        "head head  head" 1fr
+        "nav  main  main" minmax(100px, 1fr)
+        "nav  foot  foot" 2fr /
+        1fr   100px 1fr;
+}
+.page__head {
+    grid-area: head;
+}
+.page__nav {
+    grid-area: nav;
+}
+.page__main {
+    grid-area: main;
+}
+.page__footer {
+    grid-area: foot;
+}
 ```
 
+See also:
 
-## FAQ
+* [The guide about Grids in IE and Autoprefixer].
+* [`postcss-gap-properties`] to use new `gap` property
+  instead of old `grid-gap`.
+* [`postcss-grid-kiss`] has alternate “everything in one property” syntax,
+  which make using Autoprefixer’s Grid safer.
+
+[The guide about Grids in IE and Autoprefixer]: https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/
+[`postcss-gap-properties`]:                     https://github.com/jonathantneal/postcss-gap-properties
+[`postcss-grid-kiss`]:                          https://github.com/sylvainpolletvillard/postcss-grid-kiss
 
 #### No prefixes in production
 
@@ -502,7 +485,7 @@ You can use these plugin options to disable some of the Autoprefixer's features.
   versions of specification.
 * `remove: false` will disable cleaning outdated prefixes.
 
-You shoud set them to the plugin:
+You should set them to the plugin:
 
 ```js
 autoprefixer({ grid: true });
@@ -531,7 +514,7 @@ you can use control comments to disable Autoprefixer.
 }
 ```
 
-There is two types of control commens:
+There are two types of control comments:
 
 * `/* autoprefixer: off */` disable the whole block *before* and after comment.
 * `/* autoprefixer: ignore next */` disable only next property
@@ -547,13 +530,6 @@ You can also use comments recursively:
         /* autoprefixer: off */
     }
 }
-```
-
-In Sass/SCSS you can use all the disable options above, add an exclamation mark
-in the start of comment:
-
-```scss
-/*! autoprefixer: off */
 ```
 
 
@@ -584,10 +560,12 @@ Available options are:
 * `stats` (object): custom [usage statistics] for `> 10% in my stats`
   browsers query.
 * `browsers` (array): list of queries for target browsers. Try to not use it.
-  The best preactive is to use `.browserslistrc` config
+  The best practice is to use `.browserslistrc` config
   or `browserslist` key in `package.json` to share target browsers
   with Babel, ESLint and Stylelint. See [Browserslist docs]
   for available queries and default value.
+* `ignoreUnknownVersions` (boolean): do not raise error on unknown browser
+  version in Browserslist config or `browsers` option. Default is `false`.
 
 Plugin object has `info()` method for debugging purpose.
 
