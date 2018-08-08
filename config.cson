@@ -6,8 +6,8 @@
   core:
     autoHideMenuBar: true
     telemetryConsent: "no"
+    titleBar: "custom"
   editor:
-    fontSize: 15
     scrollPastEnd: true
   "exception-reporting":
     userId: "4bfe28f2-f667-4f96-b6ee-fc6e30290b4a"

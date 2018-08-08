@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
+        "raw": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
-        "spec": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
+        "rawSpec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
+        "spec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-118319-30067-xm4lje.g25fhzd7vi"
+      "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/apm-install-dir-11876-1967-2ws1ve.qq7s3jtt9"
     ]
   ],
-  "_from": "../d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
-  "_id": "git-blame@1.6.0",
+  "_from": "../d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
+  "_id": "git-blame@1.7.0",
   "_inCache": true,
   "_location": "/git-blame",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
+    "raw": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
-    "spec": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
+    "rawSpec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
+    "spec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
-  "_shasum": "0ef9599ff28b597fd48dd983fad0b3d9100df2cd",
+  "_resolved": "file:../d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
+  "_shasum": "8006c5ebd30e9e6dd787f2e9051cd6943f99444e",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-118319-30067-1bycsgp.6syaurf6r/package.tgz",
-  "_where": "/tmp/apm-install-dir-118319-30067-xm4lje.g25fhzd7vi",
+  "_spec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1967-11r2lhi.htdzxpf1or/package.tgz",
+  "_where": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/apm-install-dir-11876-1967-2ws1ve.qq7s3jtt9",
   "activationCommands": {
     "atom-text-editor": [
       "git-blame:toggle"
@@ -44,7 +44,6 @@
     "url": "https://github.com/alexcorre/git-blame/issues"
   },
   "dependencies": {
-    "@workpop/simple-logger": "^1.0.0",
     "lodash": "^4.17.4",
     "loophole": "1.0.x",
     "moment": "^2.19.4",
@@ -80,5 +79,5 @@
     "lint:fix": "eslint --fix .",
     "test": "npm run lint"
   },
-  "version": "1.6.0"
+  "version": "1.7.0"
 }

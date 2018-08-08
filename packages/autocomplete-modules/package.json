@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
+        "raw": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
-        "spec": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
+        "rawSpec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
+        "spec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-118318-19285-48teti.vvs5qumcxr"
+      "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/apm-install-dir-11876-1927-gxm6w2.d40wdeipb9"
     ]
   ],
-  "_from": "../d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
-  "_id": "autocomplete-modules@2.0.0",
+  "_from": "../d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
+  "_id": "autocomplete-modules@2.1.0",
   "_inCache": true,
   "_location": "/autocomplete-modules",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
+    "raw": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
-    "spec": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
+    "rawSpec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
+    "spec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
-  "_shasum": "8ac47963ab8954d0e5bc06e3f6ff9de9fff0ae22",
+  "_resolved": "file:../d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
+  "_shasum": "243225d4a9da2c991e2de08fd9176a9c5f75b938",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-118318-19285-na9l7m.00h7wdbo6r/package.tgz",
-  "_where": "/tmp/apm-install-dir-118318-19285-48teti.vvs5qumcxr",
+  "_spec": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/d-11876-1927-s9jsh2.ch5vr6bt9/package.tgz",
+  "_where": "/private/var/folders/gc/wdgts2mn64bfn75np3nv2vsr0000gn/T/apm-install-dir-11876-1927-gxm6w2.d40wdeipb9",
   "activationHooks": [
     "language-javascript:grammar-used",
     "language-babel:grammar-used",
@@ -90,5 +90,5 @@
     "pretest": "eslint src/",
     "test": "exit 0"
   },
-  "version": "2.0.0"
+  "version": "2.1.0"
 }

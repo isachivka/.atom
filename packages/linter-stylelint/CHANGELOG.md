@@ -1,3 +1,34 @@
+## [4.3.2](https://github.com/AtomLinter/linter-stylelint/compare/v4.3.1...v4.3.2) (2018-06-29)
+
+
+### Bug Fixes
+
+* **dependencies:** bump minimum assign-deep to v0.4.7 ([a98e5f7](https://github.com/AtomLinter/linter-stylelint/commit/a98e5f7))
+
+## [4.3.1](https://github.com/AtomLinter/linter-stylelint/compare/v4.3.0...v4.3.1) (2018-06-28)
+
+
+### Bug Fixes
+
+* **dependencies:** update resolve to v1.8.1 ([1179cdf](https://github.com/AtomLinter/linter-stylelint/commit/1179cdf))
+* **dependencies:** update stylelint to v9.3.0 ([1b23600](https://github.com/AtomLinter/linter-stylelint/commit/1b23600))
+
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/AtomLinter/linter-stylelint/compare/v4.2.1...v4.3.0) (2018-04-27)
+
+
+### Features
+
+* use the stylelint instance local to the project if one exists ([#381](https://github.com/AtomLinter/linter-stylelint/issues/381)) ([d8f9bf6](https://github.com/AtomLinter/linter-stylelint/commit/d8f9bf6))
+
+<a name="4.2.1"></a>
+## [4.2.1](https://github.com/AtomLinter/linter-stylelint/compare/v4.2.0...v4.2.1) (2018-04-27)
+
+
+### Bug Fixes
+
+* **package:** update stylelint to version 9.2.0 ([7d20459](https://github.com/AtomLinter/linter-stylelint/commit/7d20459)), closes [#389](https://github.com/AtomLinter/linter-stylelint/issues/389)
+
 # Change Log
 
 ## [v4.2.0](https://github.com/AtomLinter/linter-stylelint/tree/v4.2.0) (2017-12-15)
